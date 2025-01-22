@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Quicksand', serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 0 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* shared styles */
+
+.text-orange {
+  color: #fea301;
+}
+
+.text-skyblue {
+  color: skyblue;
+}
+
+.text-lightblue {
+  color: #05d4df;
+}
+
+.text-purple {
+  color: #5d58ef;
+}
+
+/* nav styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.logo {
+  display: flex;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav-btn button {
+  background: #fea301;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.ham-display {
+  display: none;
+}
+
+/* banner section starts */
+
+.banner {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 55px;
+}
+
+.hero-des {
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+.hero-para {
+  margin: 24px 0;
+}
+
+.primary-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* curriculum styles */
+.curriculum {
+  border: 1px solid gray;
+  background-image: url('../assets/bg.png');
+}
+.curr-title {
+  text-align: center;
+  margin: 25px 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.kinder,
+.elementary,
+.middle {
+  height: 400px;
+  width: 410px;
+  text-align: center;
+  padding: 45px 25px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  margin: 0 15px;
+}
+
+.kinder {
+  background: linear-gradient(180deg, #def5ff 0%, rgba(255, 255, 255, 1) 55%);
+  border-color: #def5ff;
+}
+
+.elementary{
+background: linear-gradient(180deg, rgba(251,232,191,1) 10%, rgba(255,255,255,1) 98%);
+border-color: #def5ff;
+}
+
+.middle{
+background: linear-gradient(180deg, rgba(242,232,255,1) 5%, rgba(255,255,255,1) 98%);
+border-color: #def5ff;
+}
+
+/* media section  */
+@media only screen and (max-width: 576px) {
+  .brand,
+  .nav-links,
+  .nav-btn {
+    display: none;
+  }
+  .navbar {
+    margin: 0 auto;
+    border-bottom: 1px solid orange;
+    padding: 10px;
+  }
+  .ham-display {
+    display: block;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .hero {
+    text-align: center;
+  }
+  .primary-btn {
+    margin-bottom: 10px;
+  }
+
+  /* Card */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
