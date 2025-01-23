@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* overflow: hidden; */
 }
 
 a {
@@ -17,7 +18,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -211,23 +212,20 @@ body {
 }
 
 .story-1 {
-  border-radius: 10px;
+  border-radius: 15px;
   width: 540px;
   height: 630px;
-  border: 1px solid gray;
   background-color: white;
-  padding: 0 10px;
 }
 .story-2,
 .story-3,
 .story-4,
 .story-5 {
-  width: 305px;
-  height: 305px;
-  border: 1px solid gray;
-  border-radius: 10px;
+  width: 295px;
+  height: 295px;
+  border-radius: 15px;
   background-color: white;
-  padding: 0 10px;
+  margin-bottom: 15px;
 }
 
 .story-1 {
@@ -248,10 +246,16 @@ body {
 
 .story-cards {
   display: grid;
-  justify-content: space-around;
+  grid-gap: 20px;
+  justify-content: space-evenly;
   grid-template-areas:
     'story-1  story-2  story-3'
     'story-1  story-4  story-5';
+}
+
+.story-content {
+  padding: 10px 10px;
+  margin: 5px;
 }
 
 .story-btn {
@@ -308,6 +312,7 @@ body {
 
 /* media section  */
 @media only screen and (max-width: 576px) {
+
   .brand,
   .nav-links,
   .nav-btn {
@@ -327,6 +332,12 @@ body {
   }
   .hero {
     text-align: center;
+
+  }
+
+  .hero-des {
+    font-weight: bold;
+    font-size: 3rem;
   }
   .primary-btn {
     margin-bottom: 10px;
@@ -355,5 +366,16 @@ body {
     display: none;
   }
 
-  
+  .stories {
+    grid-area: 'story-2 story3' 'story-4 story5';
+  }
+
+  .story-2,
+  .story-3,
+  .story-4,
+  .story-5 {
+    width: 220px;
+    height: 300px;
+    margin: 0 15px 0 3px;
+  }
 }
