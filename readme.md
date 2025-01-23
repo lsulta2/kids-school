@@ -1,6 +1,6 @@
 ### WELCOME TO ASSIGNMENT-002
 
-# <img width=30 src="./assets/logo.png"/> Kids-School
+# <img width=30 src=".../assets/logo.png"/> Kids-School
 
 ## **📅 Deadline For 60 marks**: 22th January , 2025 ( 11:59 pm ⏱️)
 
@@ -55,7 +55,6 @@
 - **Responsiveness**:
   - Mobile: Cards will displayed in two columns.
 
-
 ### 5. Footer
 
 - **Structure**:
@@ -73,11 +72,13 @@
 ### Positioning & Data Hiding
 
 - show the date by positioning between image and context as figma on every cards
-- hide the 1st  card on  small devices and show 4-6 card.
-- hide arrow button group  from the statndard curriculam section.
+- hide the 1st card on small devices and show 4-6 card.
+- hide arrow button group from the statndard curriculam section.
 
 ### Explore Marquee & Use It
+
 - Explore Marquee Tag. use it anywhere in your homepage. make sure marquee is working.
+
 ---
 
 # Technology
